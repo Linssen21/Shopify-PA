@@ -1,8 +1,19 @@
 {
-    "sections": {
-        "main": {
-            "type": "main-test-product"
-        }
+  "sections": {
+    "main": {
+      "type": "main-test-product",
+      "settings": {
+      }
     },
-    "order": ["main"]
+    "163399955876e05066": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "163399955876e05066"
+  ]
 }
