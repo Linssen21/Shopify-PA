@@ -1,10 +1,22 @@
-Hello from section file
+<h2>{{product.title}}</h2>
+<img src="{{product.featured_image | img_url: '300x'}}" />
+
+
 
 {% schema %}
 {
     "name": "Section Name",
     "settings": [
-        
+        {
+            "id": "tax_notice",
+            "type": "text",
+            "label": "tax notice"
+        },
+        {
+            "id": "show_reviews",
+            "type": "checkbox",
+            "label": "show reviews"
+        }
     ]
 }
 {% endschema %}
