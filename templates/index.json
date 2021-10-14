@@ -134,6 +134,7 @@
         "column1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-zdenek-rosenthaler-2694050.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
@@ -141,6 +142,7 @@
         "column2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-markus-spiske-113335.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
@@ -148,6 +150,7 @@
         "column3": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-min-an-793012.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
