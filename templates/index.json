@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand Test",
+            "heading": "Lorem Ipsum",
             "heading_size": "medium"
           }
         },
@@ -27,6 +27,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/pexels-rovelyn-camato-3698415.jpg",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
         "show_text_box": true,
@@ -42,14 +43,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand test",
+            "heading": "Lorem Ipsum",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p><br\/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus, sem vitae feugiat imperdiet, lorem nisl volutpat ligula, in auctor diam risus et justo<br\/><br\/><\/p>"
           }
         },
         "button": {
@@ -101,7 +102,7 @@
         "product": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "antique-drawers",
             "second_image": false,
             "image_padding": false,
             "secondary_background": false
@@ -176,6 +177,41 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "16341718699abcc738": {
+      "type": "rich-text",
+      "blocks": {
+        "16341718699abcc738-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "16341718699abcc738-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "16341718699abcc738-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16341718699abcc738-0",
+        "16341718699abcc738-1",
+        "16341718699abcc738-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
     }
   },
   "order": [
@@ -184,6 +220,7 @@
     "featured_products",
     "collage",
     "video",
-    "multi_column"
+    "multi_column",
+    "16341718699abcc738"
   ]
 }
