@@ -4,7 +4,7 @@
 <div class="owl-carousel owl-theme">
 	{% for block in section.blocks %}
 		{% case block.type %}
-			{% when "cake" %}
+			{% when "carousel" %}
 				<div class="item" class="{{ block.shopify_attributes }}">
 					{{ block.settings.carousel_image | img_url: '2048x' | img_tag }}
 				</div>
