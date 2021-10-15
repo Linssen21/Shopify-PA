@@ -1,11 +1,12 @@
 {{ 'custom-carousel.css' | asset_url | stylesheet_tag }}
 
-
-<div class="owl-carousel owl-theme">
+<div class="page-width">
+<div class="">
 	{% for block in section.blocks %}
 		{% case block.type %}
-			{% when "cake" %}
-				<div class="item" class="{{ block.shopify_attributes }}">
+			{% when "carousel" %}
+				<div class="">
+
 					{{ block.settings.carousel_image | img_url: '2048x' | img_tag }}
 				</div>
 		{% else %}
@@ -14,8 +15,7 @@
 	{% endcase %}
 	{% endfor %}
 </div>
-
-
+</div>
 
 
 {% schema %}
