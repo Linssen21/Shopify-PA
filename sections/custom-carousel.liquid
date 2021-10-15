@@ -14,11 +14,24 @@
 	"blocks": [{
 		"name": "Carousel",
 		"type": "carousel",
-		"settings": [{
+		"settings": [
+        
+        {
+            "type": "text",
+            "id": "carousel_heading",
+            "label": "Carousel Heading"
+        },
+        {
 			"type": "image_picker",
-			"id": "image",
-			"label": "Image"
-		}]
+			"id": "carousel_image",
+			"label": "Carousel Image"
+		},
+        {
+            "type": "richtext",
+            "id": "carousel_content",
+            "label": "Carousel Content"
+        }
+        ]
 	}],
 	"presets": [{
 		"name": "Custom Carousel"
