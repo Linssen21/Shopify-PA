@@ -1,8 +1,24 @@
+{{ 'custom-carousel.css' | asset_url | stylesheet_tag }}
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name":"t:sections.carousel.name",
+    "tag":"section",
+    "class":"custom-carousel",
+    "settings":[
+       {
+          "type":"image_picker",
+          "id":"image_carouse",
+          "label":"t:sections.carousel.settings.image.label"
+       }
+    ],
+    "presets":[
+       {
+          "name":"t:sections.carousel.presets.name"
+       }
+    ]
+ }
 {% endschema %}
 
 {% stylesheet %}
