@@ -1,0 +1,64 @@
+{{ 'custom-carousel.css' | asset_url | stylesheet_tag }}
+
+
+<div class="owl-carousel owl-theme">
+	{% for block in section.blocks %}
+		{% case block.type %}
+			{% when "cake" %}
+				<div class="item" class="{{ block.shopify_attributes }}">
+					{{ block.settings.carousel_image | img_url: '2048x' | img_tag }}
+				</div>
+		{% else %}
+     
+
+	{% endcase %}
+	{% endfor %}
+</div>
+
+
+
+
+{% schema %}
+{
+	"name": "Custom Carousel",
+	"tag": "section",
+	"class": "custom-carousel",
+	"settings": [{
+		"type": "text",
+		"id": "title",
+		"label": "Carousel Title"
+	}],
+	"blocks": [{
+		"name": "Carousel",
+		"type": "carousel",
+		"settings": [
+        
+        {
+            "type": "text",
+            "id": "carousel_heading",
+            "label": "Carousel Heading"
+        },
+        {
+			"type": "image_picker",
+			"id": "carousel_image",
+			"label": "Carousel Image"
+		},
+        {
+            "type": "richtext",
+            "id": "carousel_content",
+            "label": "Carousel Content"
+        }
+        ]
+	}],
+	"presets": [{
+		"name": "Custom Carousel"
+	}]
+
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
