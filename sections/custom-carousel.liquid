@@ -3,22 +3,28 @@
 
 {% schema %}
 {
-    "name":"t:sections.carousel.name",
-    "tag":"section",
-    "class":"custom-carousel",
-    "settings":[
-       {
-          "type":"image_picker",
-          "id":"image_carouse",
-          "label":"t:sections.carousel.settings.image.label"
-       }
-    ],
-    "presets":[
-       {
-          "name":"t:sections.carousel.presets.name"
-       }
-    ]
- }
+	"name": "Custom Carousel",
+	"tag": "section",
+	"class": "custom-carousel",
+	"settings": [{
+		"type": "text",
+		"id": "title",
+		"label": "Carousel Title"
+	}],
+	"blocks": [{
+		"name": "Carousel",
+		"type": "carousel",
+		"settings": [{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Image"
+		}]
+	}],
+	"presets": [{
+		"name": "Custom Carousel"
+	}]
+
+}
 {% endschema %}
 
 {% stylesheet %}
