@@ -1,6 +1,5 @@
 {{ 'custom-carousel.css' | asset_url | stylesheet_tag }}
 
-<<<<<<< HEAD
 <div class="page-width">
 <div class="">
 	{% for block in section.blocks %}
@@ -8,15 +7,6 @@
 			{% when "carousel" %}
 				<div class="">
 
-=======
-
-<div>Custom Carousel</div>
-<div class="owl-carousel owl-theme">
-	{% for block in section.blocks %}
-		{% case block.type %}
-			{% when "carousel" %}
-				<div class="item" class="{{ block.shopify_attributes }}">
->>>>>>> f34c563d145c98eaaf4ddf51e0193fa952856e05
 					{{ block.settings.carousel_image | img_url: '2048x' | img_tag }}
 				</div>
 		{% else %}
