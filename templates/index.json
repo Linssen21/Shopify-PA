@@ -123,6 +123,7 @@
       "type": "video",
       "settings": {
         "heading": "Video",
+        "cover_image": "shopify:\/\/shop_images\/pexels-huy-phan-3097769.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false
@@ -206,6 +207,34 @@
         "color_scheme": "background-1",
         "full_width": true
       }
+    },
+    "163426103294d90ecc": {
+      "type": "custom-carousel",
+      "blocks": {
+        "8e8d9897-1fe6-45f6-b514-77ef7f3c5d9a": {
+          "type": "carousel",
+          "settings": {
+            "carousel_heading": "test1",
+            "carousel_image": "shopify:\/\/shop_images\/pexels-huy-phan-3097769.jpg",
+            "carousel_content": "<p>test1<\/p>"
+          }
+        },
+        "7e2ec560-047c-4bce-a438-97dbface7679": {
+          "type": "carousel",
+          "settings": {
+            "carousel_heading": "test2",
+            "carousel_image": "shopify:\/\/shop_images\/pexels-min-an-793012.jpg",
+            "carousel_content": "<p>test2<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8e8d9897-1fe6-45f6-b514-77ef7f3c5d9a",
+        "7e2ec560-047c-4bce-a438-97dbface7679"
+      ],
+      "settings": {
+        "title": "Carousel Title"
+      }
     }
   },
   "order": [
@@ -215,6 +244,7 @@
     "collage",
     "video",
     "multi_column",
-    "16341718699abcc738"
+    "16341718699abcc738",
+    "163426103294d90ecc"
   ]
 }
