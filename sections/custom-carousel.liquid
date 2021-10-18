@@ -3,7 +3,7 @@
 
 
 <div id="shopify-section-[id]" class="page-width gc-carousel">
-{% if section.settings.title == blank %} no-heading{% endif %}">
+
 <h2>{{ section.settings.title | escape }}</h2>
 <div class="owl-carousel owl-theme">
 	{% for block in section.blocks %}
