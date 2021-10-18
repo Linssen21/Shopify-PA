@@ -2,6 +2,7 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+  	itesm:3,
     responsive:{
         0:{
             items:1
