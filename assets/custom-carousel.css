@@ -4,3 +4,9 @@
   height: 320px;
     object-fit: cover;
 }
+
+
+.gc-carousel .item{
+  text-align:center; 
+}
+

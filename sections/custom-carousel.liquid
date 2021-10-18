@@ -7,7 +7,7 @@
 			{% when "carousel" %}
 				<div class="item">
 					{{ block.settings.carousel_image | img_url: '2048x' | img_tag }}
-					<h3>{{block.settings.carousel_heading}}</h3>
+					<h3 class="h2">{{block.settings.carousel_heading}}</h3>
 					{{block.settings.carousel_content}}
 				</div>
 		{% else %}
