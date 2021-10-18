@@ -1,6 +1,6 @@
 {{ 'custom-carousel.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width">
+<div class="page-width gc-carousel">
 <div class="owl-carousel owl-theme">
 	{% for block in section.blocks %}
 		{% case block.type %}
