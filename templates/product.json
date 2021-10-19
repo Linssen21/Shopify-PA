@@ -61,7 +61,7 @@
             "heading": "Description",
             "content": "<p>Height: {{ product.metafields.my_fields.height | metafield_tag }}<\/p><p>Diameter Outside: {{ product.metafields.my_fields.diameter_outside | metafield_tag }}<\/p><p>Diameter Inside: {{ product.metafields.my_fields._diameter_inside | metafield_tag }}<\/p>",
             "page": "",
-            "icon": "check_mark"
+            "icon": "leaf"
           }
         }
       },
