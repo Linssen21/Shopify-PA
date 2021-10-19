@@ -59,7 +59,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Description",
-            "content": "<p>Height: {{ product.metafields.my_fields.height | metafield_tag }}<\/p><p>Diameter Outside: {{ product.metafields.my_fields.diameter_outside | metafield_tag }}<\/p><p>Diameter Inside: {{ product.metafields.my_fields._diameter_inside | metafield_tag }}<\/p><p>Weight: {{ product.metafields.my_fields.weight | metafield_tag }}<\/p>",
+            "content": "<p>Height: {{ product.metafields.my_fields.height | metafield_tag }}<\/p><p>Diameter Outside: {{ product.metafields.my_fields.diameter_outside | metafield_tag }}<\/p><p>Diameter Inside: {{ product.metafields.my_fields._diameter_inside | metafield_tag }}<\/p><p>Weight: {{ product.metafields.my_fields.weight | metafield_tag }}<\/p><p>Volume: {{ product.metafields.my_fields.volume | metafield_tag }}<\/p>",
             "page": "",
             "icon": "leaf"
           }
