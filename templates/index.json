@@ -1,5 +1,13 @@
 {
   "sections": {
+    "163513630601be44b3": {
+      "type": "custom-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pexels-huy-phan-3097769.jpg",
+        "adapt_height_first_image": false,
+        "image_overlay_opacity": 0
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -238,6 +246,7 @@
     }
   },
   "order": [
+    "163513630601be44b3",
     "image_banner",
     "rich_text",
     "featured_products",
