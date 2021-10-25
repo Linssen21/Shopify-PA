@@ -1,0 +1,53 @@
+{{ 'custom-section-image-banner.css'  | asset_url  | stylesheet_tag }}
+
+{%- style -%}
+
+{%- endstyle -%}
+
+<div id="Banner-{{ section.id }}">
+    <!-- {%- if section.settings.image != blank -%} -->
+    <div class="bootstrap-wrapper page-width">
+        <div class="row">
+            <div class="col-6">
+                <h1>Heading</h1>
+            </div>
+            <div class="col-6">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- {%- endif -%} -->
+</div>
+
+{% schema %}
+{
+    "name":"Custom Image Banner",
+    "tag":"section",
+    "class":"custom-section-banner-image",
+    "settings":[
+       {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Custom Banner Image"
+       },
+       {
+          "type":"checkbox",
+          "id":"adapt_height_first_image",
+          "label":"Adapt Height First Image",
+          "default":false
+       },
+       {
+          "type":"range",
+          "id":"image_overlay_opacity",
+          "label":"label",
+          "unit":"%",
+          "min":0,
+          "max":100,
+          "step":10,
+          "default":0
+       }
+    ]
+ }
+{% endschema %}
