@@ -1,5 +1,6 @@
 .custom-banner .row{
     margin: 0px;
+  overflow:hidden;
 }
 
 .custom-banner .col:first-child{
