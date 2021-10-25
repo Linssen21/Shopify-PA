@@ -9,4 +9,9 @@
     align-items: center;
 
 }
+
+.custom-banner .background-image{
+  height:600px;
+  object-fit:cover;
+}
   
