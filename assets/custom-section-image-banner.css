@@ -1,3 +1,11 @@
 .custom-banner .row{
     margin: 0px;
 }
+
+.custom-banner .col:first-child{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+}
