@@ -1,11 +1,17 @@
 .custom-banner .row{
     margin: 0px;
+  overflow:hidden;
 }
 
 .custom-banner .col:first-child{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+
+}
+
+.custom-banner .background-image{
+  height:600px;
+  object-fit:cover;
 }
   
