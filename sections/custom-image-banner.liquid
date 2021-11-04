@@ -5,20 +5,20 @@
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="custom-banner" >
-    <!-- {%- if section.settings.image != blank -%} -->
+    {%- if section.settings.image != blank -%}
     <div class="bootstrap-wrapper page-width">
         <div class="row">
             <div class="col col-6">
                 <h1>Heading</h1>
             </div>
-            <div class="col col-6">
-                <img src="" alt="">
+            <div class="col col-6" style="background: url({{ section.settings.image | img_url: '1500x' }});">
+            
             </div>
         </div>
     </div>
 
 
-    <!-- {%- endif -%} -->
+    {%- endif -%}
 </div>
 
 {% schema %}
