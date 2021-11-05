@@ -6,25 +6,16 @@
 
 <div id="Banner-{{ section.id }}" class="custom-banner" >
     {%- if section.settings.image != blank -%}
-<<<<<<< HEAD
-    <div class="bootstrap-wrapper page-width">
-=======
     <div class="bootstrap-wrapper">
-<<<<<<< HEAD
->>>>>>> 204bc0751f239aeeacdde70e655785133e46f79c
-=======
-      <div class="page-width">
->>>>>>> bfd5ec44d0eeacf2140ca74f3fe5631dd758d976
         <div class="row">
             <div class="col col-6">
                 <h1>Heading</h1>
+                <h2 class="banner__heading {% if section.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
+                    <span>{{ block.settings.heading | escape }}</span>
+                  </h2>
             </div>
-<<<<<<< HEAD
-            <div class="col col-6" style="background: url({{ section.settings.image | img_url: '1500x' }});">
-            
-=======
             <div class="col col-6">
-                <img  class="background-image img-fluid" srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
+                <img  class="background-image" srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
                 {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
                 {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
                 {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
@@ -38,10 +29,8 @@
                 width="{{ section.settings.image.width }}"
                 height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
                 >
->>>>>>> 204bc0751f239aeeacdde70e655785133e46f79c
             </div>
         </div>
-       </div>
     </div>
 
 
@@ -52,7 +41,7 @@
 {
     "name":"Custom Image Banner",
     "tag":"section",
-    "class":"custom-section-banner-image spaced-section",
+    "class":"custom-section-banner-image",
     "settings":[
        {
           "type":"image_picker",
@@ -74,6 +63,26 @@
           "max":100,
           "step":10,
           "default":0
+       },{
+           "type": "text",
+           "id": "custom_banner_header",
+           "label": "Banner Header",
+       },
+       {
+           "type": "select",
+           "id": "heading_size",
+           "opttions": [
+           {
+               "value": "medium",
+               "label": "Medium Size"
+           },
+           {
+            "value": "large",
+            "label": "Large Size"
+        }
+           ],
+           "default": "mediun",
+           "label": "Medium Size"
        }
     ],
     "presets": [{
