@@ -6,6 +6,8 @@ class PredictiveSearch extends HTMLElement {
     this.predictiveSearchResults = this.querySelector('[data-predictive-search]');
 
     this.setupEventListeners();
+    
+    console.log(routes.predictive_search_url);
   }
 
   setupEventListeners() {
